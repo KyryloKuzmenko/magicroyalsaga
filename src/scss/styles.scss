@@ -1,18 +1,18 @@
 @import './header.scss';
-@import './vite-promo.scss';
+@import './hero.scss';
+@import './about.scss';
+@import './how-to-play.scss';
+@import './features.scss';
+@import './characters.scss';
+@import './explorer.scss';
+@import './rewards.scss';
+@import './faq.scss';
+@import './reviews.scss';
+@import './download.scss';
+@import './footer.scss';
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+@import './cookies-modal.scss';
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+@import './cookies-policy.scss';
+@import './privacy-policy.scss';
+@import './terms-and-conditions.scss';

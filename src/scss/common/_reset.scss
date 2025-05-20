@@ -12,6 +12,8 @@ html {
 
 body {
   margin: 0;
+  font-family: "Saira SemiCondensed", sans-serif;
+  font-weight: 400;
 }
 
 h1,
@@ -23,6 +25,13 @@ h6,
 p,
 li {
   margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Saira SemiCondensed", sans-serif;
+  font-weight: 700;
 }
 
 ul {
@@ -44,4 +53,18 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include media(desktop) {
+      max-width: 1440px;
+      padding-left: 80px;
+      padding-right: 80px;
+  }
 }
