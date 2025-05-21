@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -53,14 +54,14 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-text-stroke: 10px #241C79;
+  -webkit-text-stroke: 7px #241C79;
   color: transparent;
   -webkit-text-fill-color: transparent;
   z-index: 1;
   pointer-events: none;
 
   @include media(desktop) {
-    -webkit-text-stroke: 15px #241C79;
+    -webkit-text-stroke: 9px #241C79;
   }
 }
 

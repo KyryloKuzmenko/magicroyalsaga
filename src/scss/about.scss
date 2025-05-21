@@ -1,0 +1,130 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-about-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.desktop-top-about-img {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    width: 1640px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.about-section-wrap {
+  position: relative;
+  background-color: #f2f1ef;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  @include media(desktop) {
+    padding-top: 134px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.about-title-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.left-decor,
+.right-decor {
+  height: 38px;
+}
+
+.about-title {
+  width: 154px;
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  @include media(desktop) {
+    width: 206px;
+    font-size: 32px;
+  }
+}
+
+.about-main-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+  color: #101012;
+  margin-top: 32px;
+  @include media(desktop) {
+    margin-top: 56px;
+    width: 1061px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+  }
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 16px;
+  @include media(desktop) {
+    margin-top: 32px;
+    flex-direction: row;
+  }
+}
+
+.about-list-item {
+  display: flex;
+  gap: 10px;
+  border: 4px solid #241c79;
+  border-radius: 16px;
+  padding: 16px;
+  @include media(desktop) {
+    width: 300px;
+    height: 250px;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.about-list-img {
+  width: 100px;
+  height: 100px;
+  @include media(desktop) {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.about-list-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #101012;
+  @include media(desktop) {
+    width: 278px;
+    text-align: center;
+  }
+}
