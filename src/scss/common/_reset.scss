@@ -12,8 +12,9 @@ html {
 
 body {
   margin: 0;
-  font-family: "Saira SemiCondensed", sans-serif;
+  font-family: "Saira Semi Condensed", sans-serif;
   font-weight: 400;
+  background: #222222;
 }
 
 h1,
@@ -28,10 +29,50 @@ li {
 }
 
 h1,
+h2 {
+  font-family: "Saira Semi Condensed", sans-serif;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.text-fill {
+  background: linear-gradient(180deg, #fec305 0%, #f2efe9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.text-stroke {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-text-stroke: 10px #241C79;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+  pointer-events: none;
+
+  @include media(desktop) {
+    -webkit-text-stroke: 15px #241C79;
+  }
+}
+
+
+
+h1,
 h2,
 h3 {
-  font-family: "Saira SemiCondensed", sans-serif;
+  font-family: "Saira Semi Condensed", sans-serif;
   font-weight: 700;
+
+
 }
 
 ul {
@@ -46,7 +87,11 @@ a {
 }
 
 button {
+  background: transparent;
+  border: none;
+  padding: 0;
   cursor: pointer;
+  display: block;
 }
 
 img {

@@ -1,0 +1,131 @@
+.header-section {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+}
+
+.header-nav {
+  background: #241c79;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 48px;
+  @include media(desktop) {
+    align-items: center;
+    height: 46px;
+  }
+}
+
+.hidden-sections-list {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 47px;
+  }
+}
+
+.hidden-sections-item {
+  padding: 4px 0px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+
+.hidden-sections-item-link {
+  font-weight: 300;
+  font-size: 14px;
+  color: #f2f1ef;
+}
+
+.hidden-sections-item-link:hover {
+  color: #ffce2f;
+}
+
+
+.hidden-sections-item-link:focus {
+  border-bottom: 1px solid #ffce2f;
+}
+
+.close-burger-btn {
+  display: none;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.burger-btn {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 47px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  // height: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+
+  background: #241c79;
+}
+
+.backdrop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bd-sections-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.bd-sections-item {
+  padding: 4px 0px;
+}
+
+.bd-sections-item-link {
+  font-weight: 500;
+  font-size: 20px;
+  color: #f2f1ef;
+}
+
+.bd-sections-item-link:active {
+  border-bottom: 1px solid #ffce2f;
+}
+
+.bd-pages-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 32px;
+  gap: 4px;
+}
+
+.bd-pages-iten {
+  padding: 8px;
+}
+
+.bd-pages {
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #f2f1ef;
+}
