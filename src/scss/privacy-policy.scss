@@ -1,0 +1,81 @@
+.privacy-content-wrap {
+  background-color: #f2f1ef;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 40px;
+
+}
+
+.go-back-img {
+  width: 24px;
+  height: 24px;
+}
+
+.go-back-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 32px;
+
+}
+
+.btn-text {
+  font-family: "Saira Semi Condensed", sans-serif;
+font-weight: 400;
+font-size: 14px;
+text-align: center;
+color: #101012;
+}
+
+.privacy-title {
+  width: 134px;
+  flex-shrink: 0;
+  @include media(desktop) {
+    font-size: 32px;
+    width: 178px;
+  }
+}
+
+.privacy-title-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  @include media(desktop) {
+    gap: 40px;
+    margin-bottom: 16px;
+  }
+}
+
+.privacy-content-wrap h2 {
+  text-align: start;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: #101012;
+}
+
+.privacy-list-item {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.privacy-link {
+  text-decoration: underline;
+}
+
+.privacy-content-wrap p {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: #101012;
+  @include media(desktop) {
+    max-width: 1080px;
+  }
+}

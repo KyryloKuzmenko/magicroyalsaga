@@ -46,9 +46,6 @@
 }
 
 
-.hidden-sections-item-link:focus {
-  border-bottom: 1px solid #ffce2f;
-}
 
 .close-burger-btn {
   display: none;
@@ -128,4 +125,10 @@
   text-decoration-skip-ink: none;
   text-align: center;
   color: #f2f1ef;
+}
+
+
+.hidden-sections-item-link.active,
+.bd-sections-item-link.active {
+  border-bottom: 1px solid #ffce2f;
 }
