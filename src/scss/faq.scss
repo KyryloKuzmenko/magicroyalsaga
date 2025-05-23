@@ -38,7 +38,7 @@
 }
 
 .faq-list-item {
-  height: 64px;
+  cursor: pointer;
 }
 
 .faq-list-title-wrap {
@@ -81,11 +81,12 @@
   font-size: 16px;
   line-height: 1.2;
   color: #101012;
- 
+
 }
 
 .faq-list-item.active .faq-list-hiden-text {
   opacity: 1;
+  max-height: 100px;
 }
 
 .faq-list-item.active .arrow-up-img {

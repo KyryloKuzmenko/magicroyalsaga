@@ -1,21 +1,18 @@
+
 document.addEventListener('DOMContentLoaded', () => {
-  const button = document.querySelectorAll('.open-accordion-btn');
+  const items = document.querySelectorAll('.faq-list-item');
 
-  button.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const faqItem = btn.closest('.faq-list-item');
-      const accContent = faqItem.querySelector('.faq-list-hiden-text');
+  items.forEach(item => {
+    const titleWrap = item.querySelector('.faq-list-title-wrap');
+    const content = item.querySelector('.faq-list-hiden-text');
 
-      faqItem.classList.toggle('active');
+    titleWrap.addEventListener('click', () => {
+      item.classList.toggle('active');
 
-      if (faqItem.classList.contains('active')) {
-        accContent.style.maxHeight = accContent.scrollHeight + 'px';
-        accContent.style.padding = '10px 24px';
-        faqItem.style.height = '118px';
+      if (item.classList.contains('active')) {
+        content.style.padding = '10px 24px';
       } else {
-        accContent.style.maxHeight = null;
-        accContent.style.padding = null;
-        faqItem.style.height = null;
+        content.style.padding = '0 24px';
       }
     });
   });

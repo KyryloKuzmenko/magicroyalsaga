@@ -1,42 +1,3 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//   const openMenuBtn = document.querySelector('.burger-btn');
-//   const closeMenuBtn = document.querySelector('.close-burger-btn');
-//   const backdrop = document.querySelector('.backdrop');
-//   const menuLinks = document.querySelectorAll(
-//     '.bd-sections-item-link, .bd-pages'
-//   );
-
-//   function toggleMenu(show) {
-//     backdrop.classList.toggle('show', show);
-//     openMenuBtn.style.display = show ? 'none' : 'block';
-//     closeMenuBtn.style.display = show ? 'block' : 'none';
-//   }
-
-//   openMenuBtn?.addEventListener('click', () => toggleMenu(true));
-//   closeMenuBtn?.addEventListener('click', () => toggleMenu(false));
-//   backdrop?.addEventListener('click', e => {
-//     if (e.target === backdrop) toggleMenu(false);
-//   });
-
-//   menuLinks.forEach(link => {
-//     link.addEventListener('click', e => {
-//       const href = link.getAttribute('href');
-
-//       if (href.startsWith('#')) {
-//         e.preventDefault();
-//         const targetEl = document.querySelector(href);
-//         if (targetEl) {
-//           const yOffset = -60;
-//           const y = targetEl.getBoundingClientRect().top + window.scrollY + yOffset;
-//           window.scrollTo({ top: y, behavior: 'smooth' });
-//           toggleMenu(false);
-//         }
-//       } else {
-//         toggleMenu(false);
-//       }
-//     });
-//   })
-// })
 
 document.addEventListener('DOMContentLoaded', () => {
   const openMenuBtn = document.querySelector('.burger-btn');
@@ -58,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target === backdrop) toggleMenu(false);
   });
 
-  // Клик по ссылке (только скролл и закрытие)
+
   menuLinks.forEach(link => {
     link.addEventListener('click', e => {
       const href = link.getAttribute('href');
@@ -86,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Подсветка активной секции
+
   function highlightMenu() {
     const sections = document.querySelectorAll('section[id]');
     const scrollY =
